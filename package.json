@@ -1,0 +1,16 @@
+{
+  "name": "RioHealthHQ",
+  "version": "1.0.0",
+  "description": "http server core http module",
+  "main": "index.js",
+  "author": "Sanket Gawande",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
