@@ -4,6 +4,11 @@ import data from "./data-store.json" assert { type: "json" };
 const app = http.createServer();
 app.on("request", (req, res) => {
   const reqParams = req.url.split("/");
+//   live status on / route
+  if(req.url === "/" ){
+    res.end(JSON.stringify({message : "You are live "}));
+    retutn;
+  }
   //   bad request if id is not present in url
   if (reqParams[1] === "projects" && reqParams.length == 2) {
     res.statusCode = 400;
